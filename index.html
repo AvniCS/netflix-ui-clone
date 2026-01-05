@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+</style>
+
+<body>
+
+    <div class="page">
+        <div class="image-box">
+            <div class="background-image">
+                <!--<img src="assets/backgroud image netflix.jpg" alt="netflix backgroud" class="background ">-->
+            </div>
+            <div class="header">
+                <img src="assets/Screenshot 2025-12-13 155322.png" alt="logo" class="overlay">
+                <div class="overlay2">
+                    <select class="language" name="English" id="english">
+                        <option>English</option>
+                        <option>Hindi</option>
+                    </select>
+                    <button class="b2"> Sign up</button>
+                </div>
+            </div>
+            <div class="hero-content ">
+                <div class="first-texts  ">
+                    <h1 class="montserrat">Unlimited movies, shows, and more</h1>
+                    <p class="first">Starts at ₹149. Cancel at any time.</p>
+                </div>
+                <div class="second-texts">
+                    <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <div class="starting">
+                        <input class="email" type="Email Address" placeholder="Email Address">
+                        <button class="b1">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <section class="redline-sec">
+                <div class="curve-wrapper">
+
+                    <svg id="visual" viewBox="0 360 900 80" width="" height="" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <defs>
+                            <!-- Gradient for the stroke color (red to white) -->
+                            <linearGradient id="strokeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#9b0b23;stop-opacity:0.7" />
+                                <stop offset="50%" style="stop-color:#ff6b85;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#9b0b23;stop-opacity:0.7" />
+                            </linearGradient>
+
+                            <!-- Glow filter -->
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="12" result="coloredBlur" />
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur" />
+                                    <feMergeNode in="coloredBlur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- Thicker glowing base layer -->
+                        <path
+                            d="M0 400L50 395C100 390 200 380 300 375C400 370 500 370 600 375C700 380 800 390 850 395L900 400"
+                            fill="none" stroke="url(#strokeGradient)" stroke-width="3" stroke-linecap="round"
+                            opacity="0.6" filter="url(#glow)" />
+
+                        <!-- Main line with variable width (thicker in middle) -->
+                        <path
+                            d="M0 400L50 395C100 390 200 380 300 375C400 370 500 370 600 375C700 380 800 390 850 395L900 400"
+                            fill="none" stroke="url(#strokeGradient)" stroke-width="8" stroke-linecap="round"
+                            filter="url(#glow)" />
+
+                        <!-- Bright white center highlight -->
+                        <path d="M300 375C400 370 500 370 600 375" fill="none" stroke="#ffffff" stroke-width="2"
+                            stroke-linecap="round" opacity="0.8" filter="url(#glow)" />
+
+                    </svg>
+                </div>
+            </section>
+        </div>
+        <section class="trending-section">
+            <div class="trending-inner">
+                <h2 class="fixingTrend">Trending Now</h2>
+                <button class="scroll-btn left">❮</button>
+                <div class="trendingNow">
+                    <div class="trending "><span class=" rank">1 </span><img src="assets/strangerThings.jpg" alt="">
+                    </div>
+                    <div class="trending "><span class=" rank">2</span> <img src="assets/younger.jpeg" alt=""> </div>
+                    <div class="trending "><span class=" rank">3</span> <img src="assets/dude.jpeg" alt=""> </div>
+                    <div class="trending "><span class=" rank">4</span> <img src="assets/theGirlfriend.jpeg" alt="">
+                    </div>
+                    <div class="trending "><span class=" rank">5</span> <img src="assets/jollyllb3.jpg" alt=""> </div>
+                    <div class="trending "><span class=" rank">6</span> <img src="assets/Delhicrime.jpeg" alt=""> </div>
+                    <div class="trending "><span class=" rank">7</span> <img src="assets/idlikadai.jpeg" alt=""> </div>
+                    <div class="trending "><span class=" rank">8</span> <img src="assets/kapil.jpg" alt=""> </div>
+                    <div class="trending "><span class=" rank">9</span> <img src="assets/sunny.jpg" alt=""> </div>
+                    <div class="trending "><span class=" rank">10</span> <img src="assets/singlepapa.jpeg" alt="">
+                    </div>
+                </div>
+                <button class="scroll-btn right">❯</button>
+
+            </div>
+        </section>
+
+        <section class="more-section">
+            <h2 class="section-title">More reasons to join</h2>
+            <div class="moreReasons">
+                <div class="moreReasonsDiv">
+                    <h2 class="Hs"> Enjoy on your TV</h2>
+                    <p class="smol">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and
+                        more.
+                    </p>
+                    <img src="assets/tv.png" alt="">
+                </div>
+                <div class="moreReasonsDiv">
+                    <h2 class="Hs">Download your shows to watch offline</h2>
+                    <p class="smol">Save your favourites easily and always have something to watch.</p>
+                    <img src="assets/down.png" alt="">
+                </div>
+                <div class="moreReasonsDiv">
+                    <h2 class="Hs">Watch everywhere</h2>
+                    <p class="smol">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                    <img src="assets/telescope.png" alt="">
+                </div>
+                <div class="moreReasonsDiv">
+                    <h2 class="Hs">create profile for kids</h2>
+                    <p class="smol">Send kids on adventures with their favourite characters in a space made just for
+                        them —
+                        free with
+                        your
+                        membership.</p>
+                    <img src="assets/faces.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="Faq-sec">
+            <div class=".faqtxt">
+                <h2 style="margin-left: 6%; padding: 2%;">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faqs">
+                <div class="faq">
+                    <button class="faq-question">
+                        <span>What is Netflix?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Netflix is a streaming service that offers a wide variety of TV shows,
+                            movies, anime, documentaries and more.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <button class="faq-question">
+                        <span>How much netflix costs?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one
+                            fixed monthly fee. Plans range from ₹149 to ₹649/month.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <button class="faq-question">
+                        <span>Where can I watch?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                            netflix.com from your personal computer or on any internet-connected device that offers the
+                            Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+                            consoles.
+                            You can also download your favourite shows with the iOS or Android app. Use downloads to
+                            watch
+                            while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <button class="faq-question">
+                        <span>How do i cancel?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Netflix is flexible. You can easily cancel your account online in two clicks. There are no
+                            cancellation fees start or stop your account anytime.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <button class="faq-question">
+                        <span>What can I watch on Netflix?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Netflix has an extensive library of feature films, documentaries, shows, anime,
+                            award-winning
+                            Netflix originals, and more. Watch as much as you want, anytime you want.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <button class="faq-question">
+                        <span>Is Netflix good for kids?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            The Netflix Kids experience is included in your membership to give parents control while
+                            kids
+                            enjoy family-friendly TV shows and films in their own space.
+                            Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                            rating of content kids can watch and block specific titles you don’t want kids to see.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last-sec">
+            <div class="lastTxts">
+                <p>Ready to watch? Enter your email to create or restart your membership. </p>
+            </div>
+            <div class=" overlay-item footer-starting">
+                <input class="email" type="Email Address" placeholder="Email Address">
+                <button class="b1">Get started</button>
+            </div>
+        </section>
+        <footer class="gridfooter">
+            <p class="footer-title">Questions? Call 000-800-040-1843</p>
+
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Help Centre</a>
+                <a href="#">Account</a>
+                <a href="#">Media Centre</a>
+
+                <a href="#">Investor Relations</a>
+                <a href="#">Jobs</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Terms of Use</a>
+
+                <a href="#">Privacy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+        </footer>
+        <div class="bottomMost">
+            <select class="language2" name="English" id="hindi">
+                <option>English</option>
+                <option>Hindi</option>
+            </select>
+        </div>
+        <p class="footer-country">Netflix India</p>
+        <p class="recaptcha-text">
+            This page is protected by Google reCAPTCHA to ensure you're not a bot.
+            <a href="#">Learn more.</a>
+        </p>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll(".faq-question");
+
+        questions.forEach(q => {
+            q.addEventListener("click", () => {
+                const answer = q.nextElementSibling;
+                const icon = q.querySelector(".icon");
+
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    icon.textContent = "+";
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    icon.textContent = "×";
+                }
+            });
+        });
+        const trendingRow = document.querySelector(".trendingNow");
+
+        document.querySelector(".scroll-btn.right").onclick = () => {
+            trendingRow.scrollBy({ left: 420, behavior: "smooth" });
+        };
+
+        document.querySelector(".scroll-btn.left").onclick = () => {
+            trendingRow.scrollBy({ left: -420, behavior: "smooth" });
+        };
+
+
+    </script>
+</body>
+
+</html>

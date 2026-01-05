@@ -1,0 +1,46 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <defs>
+    <!-- Gradient for the stroke color (red to white) -->
+    <linearGradient id="strokeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b0b23;stop-opacity:0.7" />
+      <stop offset="50%" style="stop-color:#ff6b85;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9b0b23;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Thicker glowing base layer -->
+  <path d="M0 400L50 395C100 390 200 380 300 375C400 370 500 370 600 375C700 380 800 390 850 395L900 400" 
+        fill="none" 
+        stroke="url(#strokeGradient)" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        opacity="0.6"
+        filter="url(#glow)"/>
+  
+  <!-- Main line with variable width (thicker in middle) -->
+  <path d="M0 400L50 395C100 390 200 380 300 375C400 370 500 370 600 375C700 380 800 390 850 395L900 400" 
+        fill="none" 
+        stroke="url(#strokeGradient)" 
+        stroke-width="8" 
+        stroke-linecap="round"
+        filter="url(#glow)"/>
+  
+  <!-- Bright white center highlight -->
+  <path d="M300 375C400 370 500 370 600 375" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="2" 
+        stroke-linecap="round"
+        opacity="0.8"
+        filter="url(#glow)"/>
+</svg>
